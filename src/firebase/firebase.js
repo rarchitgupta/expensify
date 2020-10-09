@@ -12,6 +12,15 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-firebase.database().ref().set({
-  name: "Archit",
-});
+firebase
+  .database()
+  .ref()
+  .set({
+    name: "Vihaan",
+    age: 20,
+    isSingle: true,
+    location: {
+      city: "Mumbai",
+      country: "India",
+    },
+  });
