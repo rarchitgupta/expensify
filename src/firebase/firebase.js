@@ -15,22 +15,16 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 
-database.ref().set({
-  name: "Archit Gupta",
-  age: "20",
-  location: {
-    city: "Mumbai",
-    country: "India"
-  }
-}).then(()=>{
-  console.log("Data is saved");
-}).catch((error)=>{
-  console.log(error);
-})
+database.ref('notes').once('value')
+  .then((snapshot)=>{
+    const expenses = [];
 
-database.ref('age').set(21);
-database.ref('location/city').set("Delhi");
-database.ref('attributes').set({
-  height: 178,
-  weight: 65
-});
+    snapshot.forEach((childSnapshot)=>{
+      expenses.push({
+        id: childSnapshot.key,
+        ...childSnapshot.val()
+      });
+    });
+
+    console.log(expenses);
+  })
