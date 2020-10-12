@@ -15,16 +15,4 @@ firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
 
-database.ref('notes').once('value')
-  .then((snapshot)=>{
-    const expenses = [];
-
-    snapshot.forEach((childSnapshot)=>{
-      expenses.push({
-        id: childSnapshot.key,
-        ...childSnapshot.val()
-      });
-    });
-
-    console.log(expenses);
-  })
+export { firebase, database as default };
