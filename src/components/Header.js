@@ -10,6 +10,7 @@ const Header = () => (
     <NavLink to="/create" activeClassName="is-active">
       Create Expense
     </NavLink>
+    <button>Logout</button>
   </header>
 );
 
