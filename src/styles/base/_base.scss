@@ -1,10 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  color: $dark-gray;
+  font-family: "Open Sans", sans-serif;
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {
