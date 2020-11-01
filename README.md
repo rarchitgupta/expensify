@@ -1,4 +1,3 @@
-
 <h1 align="center">Expensify</h1>
 <div align="center">
   <h3>
@@ -21,7 +20,9 @@
 
 ## Overview
 
-A expenses and budget management app which uses Google Login for authentication. 
+![screenshot](public/images/expenseshot.png)
+
+A expenses and budget management app which uses Google Login for authentication.
 
 ### Built With
 
