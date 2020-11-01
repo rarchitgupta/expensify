@@ -1,5 +1,12 @@
 
 <h1 align="center">Expensify</h1>
+<div align="center">
+  <h3>
+    <a href="http://expensify.rarchitgupta.com/">
+      Demo
+    </a>
+  </h3>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
