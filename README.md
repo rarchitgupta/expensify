@@ -1,7 +1,7 @@
 <h1 align="center">Expensify</h1>
 <div align="center">
   <h3>
-    <a href="http://expensify.rarchitgupta.com/">
+    <a href="https://archit-gupta-expenses-manager.herokuapp.com/">
       Demo
     </a>
   </h3>
